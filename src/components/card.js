@@ -39,7 +39,7 @@ const Card = (article) => {
   authorName.textContent = article.authorName;
   img.setAttribute('src',`${article.authorPhoto}`);
 
-
+  card.addEventListener('click', () => console.log(title))
   return card
 }
 
@@ -52,6 +52,12 @@ const cardAppender = (selector) => {
   // Create a card from each and every article object in the response, using the Card component.
   // Append each card to the element in the DOM that matches the selector passed to the function.
   //
+  const enteryPoint = document.querySelector(selector)
+
+ 
+
+
+
 }
 
 export { Card, cardAppender }
